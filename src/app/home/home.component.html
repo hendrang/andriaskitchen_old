@@ -1,0 +1,37 @@
+<div id="heading">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="heading-content">
+          <h2>Menu</h2>
+          <span>Home / <a href="#">Menu</a></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="services">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="heading-section">
+          <h2>MENU</h2>
+          <img src="/img/under-heading.png" alt="">
+        </div>
+        <div class="row">
+          <div *ngFor="let item of items" class="item col-md-4 col-sm-6">
+            <div class="item_row">
+              <div class="label-text item_col_fixed">
+                <a class="fancybox" href="{{item.ImageUrl}}">
+                  <h3>{{item.Name}}</h3>
+                </a>
+              </div>
+              <div class="text-category item_col_flex">Rp {{item.Price}}</div>
+            </div>
+            <div class="item_desc">{{item.Description}}</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
