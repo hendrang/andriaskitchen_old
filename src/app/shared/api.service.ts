@@ -1,10 +1,12 @@
 import { Injectable } from '@angular/core';
-import { Http, Response } from '@angular/http';
+import { Http } from '@angular/http';
+// import { Http, Response } from '@angular/http';
 // import { Observable } from 'rxjs/Rx';
 
 @Injectable()
 export class ApiService {
   private baseUrl: string = 'http://kantin.azurewebsites.net/api/Menu/Details/';
+  // private baseUrl: string = 'http://localhost/kantinku/api/Menu/Details/';
   title = 'Andria\'s Kitchen';
 
   constructor(private http: Http) {

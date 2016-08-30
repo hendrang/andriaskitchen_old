@@ -12,10 +12,18 @@
 .info {
     text-align: center;
     padding-bottom: 20px;
+
+    a {
+        color: #666;
+    }
 }
 
 .about .heading-section
 {
     padding-bottom: 50px;
+}
+
+iframe, object, embed {
+    max-width: 100%;
 }
 

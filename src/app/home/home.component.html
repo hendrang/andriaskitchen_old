@@ -14,16 +14,28 @@
   <div class="container">
     <div class="row">
       <div class="col-md-12">
-        <div class="heading-section">
-          <h2>MENU</h2>
-          <img src="/img/under-heading.png" alt="">
+        <div class="row heading-section">
+          <div>
+            <h2>MENU</h2>
+            <img src="/img/under-heading.png" alt="">
+          </div>
+          <div>
+            <ul id="filters" class="clearfix">
+              <li><span class="filter" (click)="categorize('')">All</span></li>
+              <li><span class="filter" (click)="categorize('indonesian')">Indonesian</span></li>
+              <li><span class="filter" (click)="categorize('italian')">Italian</span></li>
+              <li><span class="filter" (click)="categorize('japanese')">Japanese</span></li>
+            </ul>
+          </div>
         </div>
         <div class="row">
-          <div *ngFor="let item of items" class="item col-md-4 col-sm-6">
+          <div *ngFor="let item of items | myCategory: category" class="item col-md-6 col-sm-12 {{item.Category}}">
             <div class="item_row">
               <div class="label-text item_col_fixed">
                 <a class="fancybox" href="{{item.ImageUrl}}">
-                  <h3>{{item.Name}}</h3>
+                  <h3>{{item.Name}}
+                   <i class="fa fa-camera"></i>
+                  </h3>
                 </a>
               </div>
               <div class="text-category item_col_flex">Rp {{item.Price}}</div>

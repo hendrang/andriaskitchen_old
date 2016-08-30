@@ -14,7 +14,7 @@
 
     .item_col_fixed
     {
-      width: 265px;
+      width: 80%;
     }
 
     .item_col_flex
@@ -28,5 +28,10 @@
 .item_desc
 {
   margin-top: 10px;
+}
+
+.clearfix
+{
+  padding-left: 0px;
 }
 

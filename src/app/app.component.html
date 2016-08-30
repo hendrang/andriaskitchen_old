@@ -24,7 +24,8 @@
         <div>
           <div class="logo">
             <a href="#"><img src="/img/AK-logo-big.png" title="Grill Template" alt="Grill Website Template"></a>
-            <div class="address-bar">3481 Melrose Place | Beverly Hills, CA 90210 | 123.456.7890</div>
+            <div class="address-bar"><a target="blank" href="https://goo.gl/maps/MrTbE4g7o2n"> Mangga 24 Blok E136, Kepa Duri, Jakarta Barat</a>
+            <br/><a href="tel:+62215682611">+62.21.568.2611</a> | <a href="tel:+62818714648">+62.818.71.4648</a></div>
           </div>
         </div>
       </div>
@@ -40,9 +41,9 @@
             </div>
             <!-- end navbar-header -->
             <div class="collapse navbar-collapse main-menu">
-              <ul class="nav navbar-nav">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#home">About</a></li>
+              <ul class="nav navbar-nav">    
+                <li><a [routerLink]="['']">Home</a></li>
+                <li><a [routerLink]="['about']">About</a></li>
               </ul>
             </div>
             <!-- end collapse -->
@@ -53,18 +54,8 @@
   </div>
 </header>
 <main>
-  <!--<h1>Hello from {{api.title}}!</h1>-->
   <router-outlet></router-outlet>
 </main>
-<!--<main>
-  <h1>Hello from {{api.title}}!</h1>-->
-
-<!-- Images (and assets) are parsed and loaded from within the public directory -->
-<!--<img src="/img/angular.png">
-
-  <router-outlet></router-outlet>
-</main>-->
-
 <footer>
   <div class="container">
     <div class="top-footer">
@@ -74,13 +65,16 @@
             <span>Follow us:</span>
             <ul>
               <li>
-                <a href="#" class="fa fa-facebook"></a>
+                <a target="blank" href="https://www.facebook.com/AndriasKitchen/" class="fa fa-facebook"></a>
               </li>
               <li>
-                <a href="#" class="fa fa-twitter"></a>
+                <a target="blank" href="https://twitter.com/andriaskitchen" class="fa fa-twitter"></a>
               </li>
               <li>
-                <a href="#" class="fa fa-rss"></a>
+                <a target="blank" href="https://www.instagram.com/andriaskitchen" class="fa fa-instagram"></a>
+              </li>
+              <li>
+                <a target="blank" href="https://plus.google.com/u/0/108602389898422798984" class="fa fa-google-plus"></a>
               </li>
             </ul>
           </div>
@@ -110,7 +104,7 @@
               <li><i class="fa fa-phone"></i>+62.21.568.2611</li>
               <li><i class="fa fa-mobile-phone"></i>+62.818.71.4648</li>
               <li><i class="fa fa-mobile-phone"></i>BBM PIN: 767BC837</li>
-              <li><a target="blank" href="https://goo.gl/maps/MrTbE4g7o2n"><i class="fa fa-globe"></i>Jalan Mangga 24 Blok E E136<br>Kepa Duri, Jakarta Barat, 11510</a></li>
+              <li><a target="blank" href="https://goo.gl/maps/MrTbE4g7o2n"><i class="fa fa-globe"></i>Jalan Mangga 24 Blok E136<br>Kepa Duri, Jakarta Barat, 11510</a></li>
             </ul>
           </div>
         </div>
